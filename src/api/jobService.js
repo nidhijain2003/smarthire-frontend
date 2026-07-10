@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:8081/api/jobs";
+const API_BASE_URL = import.meta.env.VITE_API_URL + "/api/jobs";
 
 // Helper: builds the Authorization header using the token saved at login
 const getAuthHeaders = () => {
